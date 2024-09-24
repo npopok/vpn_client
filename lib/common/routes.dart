@@ -16,9 +16,7 @@ class SlideLeftRoute extends CustomRoute {
 class Routes extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
-        SlideLeftRoute(page: OnboardingStep1Route.page, initial: true),
-        SlideLeftRoute(page: OnboardingStep2Route.page),
-        SlideLeftRoute(page: OnboardingStep3Route.page),
+        AutoRoute(page: OnboardingRoute.page, initial: true),
         AutoRoute(page: HomeRoute.page),
       ];
 }

@@ -29,58 +29,20 @@ class HomeRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [OnboardingStep1Screen]
-class OnboardingStep1Route extends PageRouteInfo<void> {
-  const OnboardingStep1Route({List<PageRouteInfo>? children})
+/// [OnboardingScreen]
+class OnboardingRoute extends PageRouteInfo<void> {
+  const OnboardingRoute({List<PageRouteInfo>? children})
       : super(
-          OnboardingStep1Route.name,
+          OnboardingRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'OnboardingStep1Route';
+  static const String name = 'OnboardingRoute';
 
   static PageInfo page = PageInfo(
     name,
     builder: (data) {
-      return const OnboardingStep1Screen();
-    },
-  );
-}
-
-/// generated route for
-/// [OnboardingStep2Screen]
-class OnboardingStep2Route extends PageRouteInfo<void> {
-  const OnboardingStep2Route({List<PageRouteInfo>? children})
-      : super(
-          OnboardingStep2Route.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'OnboardingStep2Route';
-
-  static PageInfo page = PageInfo(
-    name,
-    builder: (data) {
-      return const OnboardingStep2Screen();
-    },
-  );
-}
-
-/// generated route for
-/// [OnboardingStep3Screen]
-class OnboardingStep3Route extends PageRouteInfo<void> {
-  const OnboardingStep3Route({List<PageRouteInfo>? children})
-      : super(
-          OnboardingStep3Route.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'OnboardingStep3Route';
-
-  static PageInfo page = PageInfo(
-    name,
-    builder: (data) {
-      return const OnboardingStep3Screen();
+      return const OnboardingScreen();
     },
   );
 }

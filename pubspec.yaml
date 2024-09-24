@@ -15,6 +15,7 @@ dependencies:
   easy_localization: ^3.0.7
   auto_route: ^9.2.2
   smooth_page_indicator: ^1.2.0+3
+  google_fonts: ^6.2.1
   
 dev_dependencies:
   flutter_test:
@@ -28,3 +29,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/translations/
+    - assets/google_fonts/   
