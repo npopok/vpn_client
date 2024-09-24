@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class OnboardingPageIndicator extends StatelessWidget {
+class PageIndicator extends StatelessWidget {
   final PageController pageController;
   final int pageCount;
 
-  const OnboardingPageIndicator({
+  const PageIndicator({
     required this.pageController,
     required this.pageCount,
     super.key,

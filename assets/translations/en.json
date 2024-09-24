@@ -4,7 +4,17 @@
     "HomeScreen.Text": "Home Screen goes here...",
 
     "OnboardingStep1.Title": "What’s your purpose of using VPN?",
+    "OnboardingStep1.Choice1": "Hide Browsing History",
+    "OnboardingStep1.Choice2": "Secure Digital Conversations",
+    "OnboardingStep1.Choice3": "Encrypt Online Data",
+    "OnboardingStep1.Choice4": "Mark IP Address",
+
     "OnboardingStep2.Title": "Tailor your VPN experience",
+    "OnboardingStep2.Choice1": "Optimize For High-speed",
+    "OnboardingStep2.Choice2": "Conceal Actual Location",
+    "OnboardingStep2.Choice3": "Safeguard Online Chats",
+    "OnboardingStep2.Choice4": "Stay Hidden From Tracking",
+
     "OnboardingStep3.Title": "Configuring settings for your goals...",
     
     "Button.Continue": "Continue",

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
 
 import 'package:vpn_client/common/common.dart';
-import 'package:vpn_client/widgets/widgets.dart';
+import 'package:vpn_client/features/onboarding/widgets/widgets.dart';
 
 @RoutePage()
 class OnboardingScreen extends StatefulWidget {
@@ -34,7 +34,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(color: Theme.of(context).scaffoldBackgroundColor),
-      const OnboardingBackground(),
+      const Background(),
       Scaffold(
         backgroundColor: Colors.transparent,
         body: Padding(
@@ -46,21 +46,21 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: PageView(
                   controller: pageController,
                   children: const [
-                    OnboardingStep1(),
-                    OnboardingStep2(),
-                    OnboardingStep3(),
+                    Step1Content(),
+                    Step2Content(),
+                    Step3Content(),
                   ],
                 ),
               ),
               FormLayout.largeSpacer,
-              OnboardingPageIndicator(
+              PageIndicator(
                 pageController: pageController,
                 pageCount: stepCount,
               ),
               FormLayout.largeSpacer,
               ValueListenableBuilder(
                 valueListenable: currentStep,
-                builder: (_, value, __) => OnboardingNextButton(
+                builder: (_, value, __) => NextButton(
                   isFinal: currentStep.value == stepCount - 1,
                   onPressed: () => _showNextPage(context),
                 ),

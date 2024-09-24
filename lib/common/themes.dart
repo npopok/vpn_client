@@ -23,6 +23,10 @@ class Themes {
           fontWeight: FontWeight.w600,
           fontSize: 27,
         ),
+        bodyLarge: textTheme.bodyLarge!.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 17,
+        ),
       ),
     );
   }

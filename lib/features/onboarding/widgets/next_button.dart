@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
-class OnboardingNextButton extends StatelessWidget {
+class NextButton extends StatelessWidget {
   final bool isFinal;
   final VoidCallback onPressed;
 
-  const OnboardingNextButton({
+  const NextButton({
     required this.isFinal,
     required this.onPressed,
     super.key,

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-abstract class OnboardingTemplate extends StatelessWidget {
+abstract class TemplateContent extends StatelessWidget {
   String get title;
   Widget get body;
 
-  const OnboardingTemplate({super.key});
+  const TemplateContent({super.key});
 
   @override
   Widget build(BuildContext context) {

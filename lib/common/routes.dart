@@ -1,16 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 
-import 'package:vpn_client/screens/screens.dart';
+import 'package:vpn_client/features/features.dart';
 
 part 'routes.gr.dart';
-
-class SlideLeftRoute extends CustomRoute {
-  SlideLeftRoute({
-    required super.page,
-    super.initial,
-    super.transitionsBuilder = TransitionsBuilders.slideLeft,
-  });
-}
 
 @AutoRouterConfig()
 class Routes extends RootStackRouter {
