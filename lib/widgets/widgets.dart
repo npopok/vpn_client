@@ -1,3 +1,4 @@
+export 'onboarding_background.dart';
 export 'onboarding_next_button.dart';
 export 'onboarding_page_indicator.dart';
 export 'onboarding_step_1.dart';
