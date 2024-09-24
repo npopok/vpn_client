@@ -1,0 +1,12 @@
+{
+    "App.Title": "VPN Client",
+    
+    "HomeScreen.Text": "Home Screen goes here...",
+
+    "OnboardingStep1Screen.Title": "What’s your purpose of using VPN?",
+    "OnboardingStep2Screen.Title": "Tailor your VPN experience",
+    "OnboardingStep3Screen.Title": "Configuring settings for your goals...",
+    
+    "Button.Continue": "Continue",
+    "Button.GetStarted": "Get Started"
+}
