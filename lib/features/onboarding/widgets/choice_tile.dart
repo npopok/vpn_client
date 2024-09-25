@@ -4,14 +4,14 @@ import 'package:vpn_client/common/common.dart';
 
 import 'gradient_container.dart';
 
-class ChoiceItem extends StatelessWidget {
+class ChoiceTile extends StatelessWidget {
   final int value;
   final int groupValue;
   final String title;
   final String image;
   final Function(int?) onChanged;
 
-  const ChoiceItem({
+  const ChoiceTile({
     required this.value,
     required this.groupValue,
     required this.title,

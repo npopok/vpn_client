@@ -5,7 +5,6 @@ import 'package:vpn_client/common/common.dart';
 
 import 'template_content.dart';
 import 'choice_list.dart';
-import 'choice_item.dart';
 
 class Step2Content extends TemplateContent {
   const Step2Content({super.key});
@@ -15,35 +14,13 @@ class Step2Content extends TemplateContent {
 
   @override
   Widget body(BuildContext context) => ChoiceList(
-        items: [
-          ChoiceItem(
-            value: 0,
-            groupValue: 0,
-            title: 'OnboardingStep2.Choice1'.tr(),
-            image: AssetsImages.onboardingStep2Choice1,
-            onChanged: (value) => null,
-          ),
-          ChoiceItem(
-            value: 1,
-            groupValue: 0,
-            title: 'OnboardingStep2.Choice2'.tr(),
-            image: AssetsImages.onboardingStep2Choice2,
-            onChanged: (value) => null,
-          ),
-          ChoiceItem(
-            value: 2,
-            groupValue: 0,
-            title: 'OnboardingStep2.Choice3'.tr(),
-            image: AssetsImages.onboardingStep2Choice3,
-            onChanged: (value) => null,
-          ),
-          ChoiceItem(
-            value: 3,
-            groupValue: 0,
-            title: 'OnboardingStep2.Choice4'.tr(),
-            image: AssetsImages.onboardingStep2Choice4,
-            onChanged: (value) => null,
-          ),
-        ],
+        initialValue: 0,
+        items: {
+          'OnboardingStep2.Choice1'.tr(): AssetsImages.onboardingStep2Choice1,
+          'OnboardingStep2.Choice2'.tr(): AssetsImages.onboardingStep2Choice2,
+          'OnboardingStep2.Choice3'.tr(): AssetsImages.onboardingStep2Choice3,
+          'OnboardingStep2.Choice4'.tr(): AssetsImages.onboardingStep2Choice4,
+        },
+        onChanged: (value) => debugPrint('Step2: selection = $value'),
       );
 }

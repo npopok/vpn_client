@@ -1,4 +1,4 @@
-export 'choice_item.dart';
+export 'choice_tile.dart';
 export 'choice_list.dart';
 export 'gradient_container.dart';
 export 'next_button.dart';
