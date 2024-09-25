@@ -29,7 +29,7 @@ class Step3Content extends TemplateContent {
               children: [
                 TextSpan(
                   text: 'OnboardingStep3.Agreement1'.tr(),
-                  style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                  style: Theme.of(context).textTheme.labelMedium!.copyWith(
                         color: Theme.of(context).primaryColorLight,
                       ),
                 ),
@@ -39,7 +39,7 @@ class Step3Content extends TemplateContent {
                 ),
                 TextSpan(
                   text: 'OnboardingStep3.Agreement3'.tr(),
-                  style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                  style: Theme.of(context).textTheme.labelMedium!.copyWith(
                         color: Theme.of(context).primaryColorLight,
                       ),
                 ),

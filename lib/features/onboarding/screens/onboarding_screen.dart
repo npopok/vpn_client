@@ -13,7 +13,6 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-  final formKey = GlobalKey<FormState>();
   final pageController = PageController();
   final ValueNotifier<int> currentStep = ValueNotifier(0);
   final stepCount = 3;
@@ -82,9 +81,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void _showNextPage(BuildContext context) {
-    // if (formKey.currentState!.validate()) {
-    //   formKey.currentState!.save();
-
     if (currentStep.value < stepCount - 1) {
       pageController.nextPage(
         duration: Durations.medium2,
@@ -93,6 +89,5 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     } else {
       context.router.replaceAll([const HomeRoute()]);
     }
-    //   }
   }
 }

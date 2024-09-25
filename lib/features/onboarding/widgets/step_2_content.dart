@@ -19,7 +19,7 @@ class Step2Content extends TemplateContent {
           ChoiceItem(
             value: 0,
             groupValue: 0,
-            title: 'OnboardingStep2.Choice2'.tr(),
+            title: 'OnboardingStep2.Choice1'.tr(),
             image: AssetsImages.onboardingStep2Choice1,
             onChanged: (value) => null,
           ),

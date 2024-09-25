@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:vpn_client/common/common.dart';
+
 import 'gradient_container.dart';
 
 class ChoiceItem extends StatelessWidget {
@@ -20,17 +22,20 @@ class ChoiceItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).extension<ThemeColors>()!;
+
     return RadioListTile<int>(
       value: value,
       groupValue: groupValue,
       title: Text(title),
       secondary: GradientContainer(
-        color1: const Color(0xFF2E4C6E).withOpacity(0.17),
-        color2: const Color(0xFF5992D4).withOpacity(0.17),
+        color1: colors.gradientContainerColor1,
+        color2: colors.gradientContainerColor2,
         width: 44,
         height: 44,
-        borderColor: const Color(0xFF4796F2).withOpacity(0.37),
+        borderColor: colors.gradientContainerBorder,
         borderWidth: 0.5,
+        borderRadius: 10.0,
         child: Image.asset(image),
       ),
       onChanged: onChanged,

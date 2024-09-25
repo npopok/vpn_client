@@ -19,7 +19,7 @@ class GradientContainer extends StatelessWidget {
     required this.height,
     this.borderColor = Colors.black,
     this.borderWidth = 1.0,
-    this.borderRadius = 10.0,
+    this.borderRadius = 8.0,
     this.boxShadow = const [],
     super.key,
   });

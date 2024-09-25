@@ -18,16 +18,9 @@ class NextButton extends StatelessWidget {
       height: 52,
       child: FilledButton(
         onPressed: onPressed,
-        style: ButtonStyle(
-          foregroundColor: const WidgetStatePropertyAll(Colors.white),
-          backgroundColor: const WidgetStatePropertyAll(Color(0xFF4796F2)),
-          shape: WidgetStatePropertyAll(
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-          ),
-        ),
         child: Text(
           (isFinal ? 'Button.GetStarted'.tr() : 'Button.Continue'.tr()).toUpperCase(),
-          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+          style: Theme.of(context).textTheme.labelLarge,
         ),
       ),
     );

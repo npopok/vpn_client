@@ -8,13 +8,15 @@ class TopBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).extension<ThemeColors>()!;
+
     return ConstrainedBox(
       constraints: const BoxConstraints.expand(),
       child: SvgPicture.asset(
         AssetsImages.onboardingBackground,
         fit: BoxFit.fitWidth,
         alignment: Alignment.topCenter,
-        colorFilter: const ColorFilter.mode(Color(0xFFD9D9D9), BlendMode.srcIn),
+        colorFilter: ColorFilter.mode(colors.topBackground, BlendMode.srcIn),
       ),
     );
   }
