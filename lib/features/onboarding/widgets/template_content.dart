@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 abstract class TemplateContent extends StatelessWidget {
   String get title;
-  Widget get body;
+  Widget body(BuildContext context);
 
   const TemplateContent({super.key});
 
@@ -15,7 +15,7 @@ abstract class TemplateContent extends StatelessWidget {
           style: Theme.of(context).textTheme.titleLarge,
           textAlign: TextAlign.center,
         ),
-        body,
+        body(context),
       ],
     );
   }

@@ -1,9 +1,10 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter_svg/svg.dart';
 
 import 'package:vpn_client/common/common.dart';
-import 'package:vpn_client/features/onboarding/widgets/widgets.dart';
+
+import 'template_content.dart';
 
 class Step3Content extends TemplateContent {
   const Step3Content({super.key});
@@ -12,17 +13,55 @@ class Step3Content extends TemplateContent {
   String get title => 'OnboardingStep3.Title'.tr().toUpperCase();
 
   @override
-  Widget get body => Column(
-        children: [
-          FormLayout.largeSpacer,
-          Padding(
-            padding: FormLayout.elementPadding,
-            child: SvgPicture.asset(
-              AssetsImages.onboardingIllustration,
+  Widget body(BuildContext context) {
+    return Column(
+      children: [
+        FormLayout.largeSpacer,
+        Padding(
+          padding: FormLayout.elementPadding,
+          child: Image.asset(AssetsImages.onboardingIllustration),
+        ),
+        Padding(
+          padding: FormLayout.contentPadding,
+          child: RichText(
+            textAlign: TextAlign.center,
+            text: TextSpan(
+              children: [
+                TextSpan(
+                  text: 'OnboardingStep3.Agreement1'.tr(),
+                  style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                        color: Theme.of(context).primaryColorLight,
+                      ),
+                ),
+                TextSpan(
+                  text: 'OnboardingStep3.Agreement2'.tr(),
+                  recognizer: _gestureRecognizer(context),
+                ),
+                TextSpan(
+                  text: 'OnboardingStep3.Agreement3'.tr(),
+                  style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                        color: Theme.of(context).primaryColorLight,
+                      ),
+                ),
+                TextSpan(
+                  text: 'OnboardingStep3.Agreement4'.tr(),
+                  recognizer: _gestureRecognizer(context),
+                ),
+              ],
             ),
           ),
-          FormLayout.largeSpacer,
-          const Text('test'),
-        ],
-      );
+        ),
+      ],
+    );
+  }
+
+  GestureRecognizer _gestureRecognizer(BuildContext context) {
+    return TapGestureRecognizer()
+      ..onTap = () => ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Message.NotImplemented'.tr()),
+              duration: const Duration(seconds: 1),
+            ),
+          );
+  }
 }

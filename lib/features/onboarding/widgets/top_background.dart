@@ -3,8 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:vpn_client/common/common.dart';
 
-class Background extends StatelessWidget {
-  const Background({super.key});
+class TopBackground extends StatelessWidget {
+  const TopBackground({super.key});
 
   @override
   Widget build(BuildContext context) {

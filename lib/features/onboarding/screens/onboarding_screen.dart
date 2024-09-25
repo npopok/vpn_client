@@ -34,7 +34,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(color: Theme.of(context).scaffoldBackgroundColor),
-      const Background(),
+      const TopBackground(),
       Scaffold(
         backgroundColor: Colors.transparent,
         body: Padding(
@@ -88,7 +88,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     if (currentStep.value < stepCount - 1) {
       pageController.nextPage(
         duration: Durations.medium2,
-        curve: Curves.bounceInOut,
+        curve: Curves.easeInOut,
       );
     } else {
       context.router.replaceAll([const HomeRoute()]);

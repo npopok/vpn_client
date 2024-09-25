@@ -18,6 +18,10 @@ class Themes {
 
     return themeData.copyWith(
       scaffoldBackgroundColor: const Color(0xFF0E1326),
+      dividerTheme: const DividerThemeData(color: Color(0xFF132F50)),
+      radioTheme: const RadioThemeData(
+        fillColor: WidgetStatePropertyAll(Color(0xFF4796F2)),
+      ),
       textTheme: textTheme.copyWith(
         titleLarge: textTheme.titleLarge!.copyWith(
           fontWeight: FontWeight.w600,
@@ -26,6 +30,10 @@ class Themes {
         bodyLarge: textTheme.bodyLarge!.copyWith(
           fontWeight: FontWeight.w400,
           fontSize: 17,
+        ),
+        labelLarge: textTheme.labelLarge!.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 16,
         ),
       ),
     );

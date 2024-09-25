@@ -16,7 +16,13 @@
     "OnboardingStep2.Choice4": "Stay Hidden From Tracking",
 
     "OnboardingStep3.Title": "Configuring settings for your goals...",
-    
+    "OnboardingStep3.Agreement1": "By continuing, you agree to our ",
+    "OnboardingStep3.Agreement2": "Privacy Policy",   
+    "OnboardingStep3.Agreement3": " and ",   
+    "OnboardingStep3.Agreement4": "Terms of Use.",
+
     "Button.Continue": "Continue",
-    "Button.GetStarted": "Get Started"
+    "Button.GetStarted": "Get Started",
+
+    "Message.NotImplemented": "Not implemented yet."
 }

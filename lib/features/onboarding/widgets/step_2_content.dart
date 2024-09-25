@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 
-import 'package:vpn_client/features/onboarding/widgets/widgets.dart';
 import 'package:vpn_client/common/common.dart';
+
+import 'template_content.dart';
+import 'choice_list.dart';
+import 'choice_item.dart';
 
 class Step2Content extends TemplateContent {
   const Step2Content({super.key});
@@ -11,7 +14,7 @@ class Step2Content extends TemplateContent {
   String get title => 'OnboardingStep2.Title'.tr().toUpperCase();
 
   @override
-  Widget get body => ChoiceList(
+  Widget body(BuildContext context) => ChoiceList(
         items: [
           ChoiceItem(
             value: 0,

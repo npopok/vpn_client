@@ -9,7 +9,7 @@ class FormLayout {
 
 class AssetsImages {
   static const onboardingBackground = 'assets/images/background.svg';
-  static const onboardingIllustration = 'assets/images/running_man.svg';
+  static const onboardingIllustration = 'assets/images/man-rocket.png';
 
   static const onboardingStep1Choice1 = 'assets/images/eyes.png';
   static const onboardingStep1Choice2 = 'assets/images/detective.png';
