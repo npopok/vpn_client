@@ -23,7 +23,7 @@ class PageIndicator extends StatelessWidget {
       effect: ScaleEffect(
         dotWidth: 12,
         dotHeight: 12,
-        scale: 1.5,
+        scale: 1.33,
         spacing: 12,
         activeDotColor: colors.pageIndicatorActiveDot,
         dotColor: colors.pageIndicatorDot,
